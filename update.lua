@@ -40,6 +40,12 @@ function get_distro()
 end
 
 local update = {
+    --[[
+      1-2. Update the package lists
+      3. Remove cached packages
+      4-5-6. Remove unnecessary files
+      7.  Clear memory cache of Linux system
+    ]]
   ["arch"] = function()
     os.execute('pacman -Syyu --noconfirm && \
                 yay -Syyu --noconfirm && \

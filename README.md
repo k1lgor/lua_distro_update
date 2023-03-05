@@ -1,6 +1,9 @@
 # lua_distro_update
 
-Update and clean-up your Linux distro.
+## Information
+
+Universal updater for your Linux distribution.
+Also clean-ups the unnecessary files.
 
 ## Prerequisites
 
@@ -16,3 +19,16 @@ chmod +x ~/update.lua && \
 sudo ~/update.lua
 ```
 
+## Suported Distros-based
+
+- **Alpine**
+- **Arch**
+- **Debian**
+- **Fedora**
+- **Gentoo**
+- **Kali**
+- **openSUSE**
+- **RHEL**
+- **Slackware**
+- **Ubuntu**
+- **Void**

@@ -69,7 +69,7 @@ local update = {
                 apt autoclean && \
                 apt autoremove -y')
     if not io.open('/usr/bin/aptitude') then
-      os.execute('sudo apt install -y aptitude')
+      os.execute('apt install -y aptitude')
     end
     os.execute('aptitude purge ~c -y && \
                 echo 3 >/proc/sys/vm/drop_caches')
@@ -184,7 +184,7 @@ local update = {
 }
 
 function clear_swap()
-  local handle = io.popen("sudo blkid | grep swap 2>&1")
+  local handle = io.popen("blkid | grep swap 2>&1")
 	local result = handle:read("*a")
 	handle:close()
 
